@@ -1,0 +1,25 @@
+[rbtools_scm_clients]
+svn = rbtools.clients.svn:SVNClient
+git = rbtools.clients.git:GitClient
+mercurial = rbtools.clients.mercurial:MercurialClient
+cvs = rbtools.clients.cvs:CVSClient
+perforce = rbtools.clients.perforce:PerforceClient
+plastic = rbtools.clients.plastic:PlasticClient
+clearcase = rbtools.clients.clearcase:ClearCaseClient
+bazaar = rbtools.clients.bazaar:BazaarClient
+
+[rbtools_commands]
+status = rbtools.commands.status:Status
+list-repo-types = rbtools.commands.list_repo_types:ListRepoTypes
+api-get = rbtools.commands.api_get:APIGet
+publish = rbtools.commands.publish:Publish
+patch = rbtools.commands.patch:Patch
+attach = rbtools.commands.attach:Attach
+close = rbtools.commands.close:Close
+diff = rbtools.commands.diff:Diff
+post = rbtools.commands.post:Post
+setup-repo = rbtools.commands.setup_repo:SetupRepo
+
+[console_scripts]
+rbt = rbtools.commands.main:main
+
